@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class moving : MonoBehaviour
 {
-    public int speed;
- 
+    public float moveSpeed = 3f;
+    float velX;
+    float velY;
+    Rigidbody rigBody;
+
+    void Start()
+    {
+        rigBody = GetComponent<Rigidbody>();
+    }
+
+    // Update is called once per frame
     void Update()
     {
-        float h = Input.GetAxisRaw("Horizontal");
-   float v = Input.GetAxisRaw("Vertical");
-
-   
-   gameObject.transform.position = new Vector3 (transform.position.x + (h * speed), 
-      transform.position.y + (v * speed));
+        velX = Input.GetAxisRaw("Horizontal");
+        velY = rigBody.velocity.y;
+        rigBody.velocity = new Vector2(velX * moveSpeed, velY);
     }
 }
