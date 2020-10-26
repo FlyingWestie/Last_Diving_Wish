@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class randomspawner : MonoBehaviour
 {
-    public GameObject[] hazards;
+    public GameObject[] items;
     public Vector3 spawnValues;
-    public int hazardCount;
+    public int itemsCount;
     public float spawnWait;
     public float startWait;
     public float waveWait;
@@ -22,20 +22,14 @@ public class randomspawner : MonoBehaviour
         UpdateScore();
         StartCoroutine(SpawnWaves());
     }
-
-    void Update()
-    {
-      
-    }
-
     IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(startWait);
         while (true)
         {
-            for (int i = 0; i < hazardCount; i++)
+            for (int i = 0; i < itemsCount; i++)
             {
-                GameObject hazard = hazards[Random.Range(0, hazards.Length)];
+                GameObject hazard = items[Random.Range(0, items.Length)];
                 Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
                 Quaternion spawnRotation = Quaternion.identity;
                 Instantiate(hazard, spawnPosition, spawnRotation);
