@@ -1071,8 +1071,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
+      - m_Target: {fileID: 565877431}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 442837878}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
@@ -1081,7 +1093,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &442837881
 MonoBehaviour:
@@ -3845,13 +3857,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9e27ceab775e4b45b212e3d662678c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hazards:
-  - {fileID: 5982078782737743078, guid: d883e18f24987754eaba4d0b7f35c26f, type: 3}
-  - {fileID: 3013157677308789114, guid: 00d4c7122042aa346ae8870a6cd32a53, type: 3}
-  - {fileID: 1167864714882902315, guid: dbe0a05018438094db28a4cf946a9613, type: 3}
-  - {fileID: 3144183095068365450, guid: 056e2eeeace5a8b44ae6e1fd4fb5aded, type: 3}
+  items: []
   spawnValues: {x: 1, y: 1, z: -5}
-  hazardCount: 3
+  itemsCount: 0
   spawnWait: 2
   startWait: 1
   waveWait: 3
