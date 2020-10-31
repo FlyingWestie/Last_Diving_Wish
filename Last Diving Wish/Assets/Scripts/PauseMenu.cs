@@ -1,40 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    public bool gamePaused = false;
-    public GameObject pauseMenu;
+    public GameObject Pausemenu, PauseButton;
 
-    // Update is called once per frame
-    void Update()
+    public void Pause()
     {
-        if (Input.GetButtonDown("fire2"))
-        {
-            if (gamePaused == false)
-            {
-                Time.timeScale = 0;
-                gamePaused = true;
-                Cursor.visible = true;
-                pauseMenu.SetActive(true);
-            }
-
-            else
-            {
-                pauseMenu.SetActive(false);
-                Cursor.visible = false;
-                gamePaused = false;
-                Time.timeScale = 1;
-            }
-        }
+        Pausemenu.SetActive (true);
+        PauseButton.SetActive(false);
+        Time.timeScale = 0;
     }
 
-    public void UnpauseGame()
+    public void Resume()
     {
-        pauseMenu.SetActive(false);
-        Cursor.visible = false;
-        gamePaused = false;
+        Pausemenu.SetActive(false);
+        PauseButton.SetActive(true);
         Time.timeScale = 1;
     }
 }
