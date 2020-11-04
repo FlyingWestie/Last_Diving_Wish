@@ -43,3 +43,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3759842763
+    locked: 0
+  - name: Luggage
+    uniqueID: 405521123
+    locked: 0
