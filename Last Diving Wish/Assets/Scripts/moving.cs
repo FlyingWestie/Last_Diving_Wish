@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class moving : MonoBehaviour
 {
@@ -8,10 +9,11 @@ public class moving : MonoBehaviour
     float velX;
     float velY;
     Rigidbody rigBody;
+   
 
     void Start()
     {
-        rigBody = GetComponent<Rigidbody>();
+        rigBody = GetComponent<Rigidbody>(); 
     }
 
     // Update is called once per frame
@@ -20,5 +22,12 @@ public class moving : MonoBehaviour
         velX = Input.GetAxisRaw("Horizontal");
         velY = rigBody.velocity.y;
         rigBody.velocity = new Vector2(velX * moveSpeed, velY);
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag.Equals("laugage"))
+        {
+            scoring.score1 += 1;
+        }
     }
 }
