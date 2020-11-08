@@ -25,7 +25,7 @@ public class moving : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag.Equals("laugage"))
+        if (collision.gameObject.tag.Equals("Luggege"))
         {
             scoring.score1 += 1;
         }
