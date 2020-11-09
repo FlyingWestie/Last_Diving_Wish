@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class moving : MonoBehaviour
 {
@@ -28,6 +29,10 @@ public class moving : MonoBehaviour
         if (collision.gameObject.tag.Equals("Luggege"))
         {
             scoring.score1 += 1;
+            if (scoring.score1 >= 5)
+            {
+                SceneManager.LoadScene("Win");
+            }
         }
 
     }

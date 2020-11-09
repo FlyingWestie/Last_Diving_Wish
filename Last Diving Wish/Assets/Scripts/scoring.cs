@@ -10,7 +10,7 @@ public class scoring : MonoBehaviour
     public static int score1 = 0;
     void Start()
     {
-        
+        score1 = 0;
     }
 
     // Update is called once per frame
