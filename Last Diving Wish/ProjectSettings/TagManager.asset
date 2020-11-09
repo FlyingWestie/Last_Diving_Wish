@@ -7,6 +7,7 @@ TagManager:
   - Luggege
   - enemy
   - button
+  - debris
   layers:
   - Default
   - TransparentFX

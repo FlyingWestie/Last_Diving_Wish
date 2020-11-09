@@ -3,41 +3,45 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Health: MonoBehaviour
+public class Health : MonoBehaviour
 {
-    public int health;
-    public int maxHealth;
+    int health;
+    public GameObject heart1;
+    public GameObject heart2;
+    public GameObject heart3;
 
-    public Image[] hearts;
-    public Sprite heart;
-    public Sprite emptyHeart;
-
-    private void Update()
+    // Start is called before the first frame update
+    void Start()
     {
-        if(health > maxHealth)
+        health = 3;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (health == 2)
+            heart3.SetActive(false);
+        if (health == 1)
+            heart2.SetActive(false);
+        if (health == 0)
+            heart1.SetActive(false);
+        //SceneManager.LoadScene("Lose");
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+
+        if (collision.gameObject.tag.Equals("debris"))
         {
-            health = maxHealth;
+
+            AddScore();
+
+
         }
 
-        for (int i = 0; i < hearts.Length; i++)
-        {
-            if(i < health)
-            {
-                hearts[i].sprite = heart;
-            }
-            else
-            {
-                hearts[i].sprite = emptyHeart;
-            }
+    }
 
-            if(i < maxHealth)
-            {
-                hearts[i].enabled = true;
-            }
-            else
-            {
-                hearts[i].enabled = false;
-            }
-        }
+    public void AddScore()
+    {
+        health -= 1;
     }
 }
