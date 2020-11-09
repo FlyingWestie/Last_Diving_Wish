@@ -37,7 +37,7 @@ public class Health : MonoBehaviour
         {
 
             AddScore();
-
+            Destroy(GameObject.FindWithTag("debris"));
 
         }
 
