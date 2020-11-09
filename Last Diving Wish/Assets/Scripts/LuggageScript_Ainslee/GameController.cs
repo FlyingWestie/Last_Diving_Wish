@@ -22,7 +22,7 @@ public class GameController : MonoBehaviour
         {
             GameObject luggage = luggageSprites[Random.Range (0,luggageSprites.Length)];
             Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
-            Quaternion spawnRotation = Quaternion.identity;
+            Quaternion spawnRotation = Quaternion.Euler(90,0,0);
             Instantiate(luggage, spawnPosition, spawnRotation);
             yield return new WaitForSeconds(spawnWait);
         }
