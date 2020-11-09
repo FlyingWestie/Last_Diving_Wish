@@ -16,8 +16,7 @@ public class moving : MonoBehaviour
     {
         rigBody = GetComponent<Rigidbody>(); 
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         velX = Input.GetAxisRaw("Horizontal");
@@ -29,11 +28,13 @@ public class moving : MonoBehaviour
         if (collision.gameObject.tag.Equals("Luggege"))
         {
             scoring.score1 += 1;
-            if (scoring.score1 >= 5)
+            Destroy(GameObject.FindWithTag("Luggege"));
+            if (scoring.score1 >= 10)
             {
                 SceneManager.LoadScene("Win");
             }
         }
-
     }
+
+
 }
