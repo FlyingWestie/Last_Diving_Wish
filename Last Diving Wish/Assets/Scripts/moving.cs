@@ -29,5 +29,6 @@ public class moving : MonoBehaviour
         {
             scoring.score1 += 1;
         }
+
     }
 }
