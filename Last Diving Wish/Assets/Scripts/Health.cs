@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -24,8 +25,10 @@ public class Health : MonoBehaviour
         if (health == 1)
             heart2.SetActive(false);
         if (health == 0)
+        {
             heart1.SetActive(false);
-        //SceneManager.LoadScene("Lose");
+            SceneManager.LoadScene("Lose");
+        }
     }
     void OnCollisionEnter(Collision collision)
     {
