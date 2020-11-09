@@ -29,7 +29,7 @@ public class moving : MonoBehaviour
         if (collision.gameObject.tag.Equals("Luggege"))
         {
             scoring.score1 += 1;
-            if (scoring.score1 >= 5)
+            if (scoring.score1 >= 10)
             {
                 SceneManager.LoadScene("Win");
             }
