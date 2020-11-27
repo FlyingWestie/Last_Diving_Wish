@@ -10,7 +10,9 @@ public class moving : MonoBehaviour
     float velX;
     float velY;
     Rigidbody rigBody;
-   
+    public AudioClip luggage_catch;
+    public AudioSource soundSource;
+
 
     void Start()
     {
@@ -28,6 +30,7 @@ public class moving : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Luggege"))
         {
+            soundSource.Play();
             scoring.score1 += 1;
             Destroy(GameObject.FindWithTag("Luggege"));
             if (scoring.score1 >= 10)

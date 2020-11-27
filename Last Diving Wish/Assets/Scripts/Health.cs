@@ -10,6 +10,8 @@ public class Health : MonoBehaviour
     public GameObject heart1;
     public GameObject heart2;
     public GameObject heart3;
+    public AudioClip lose_health;
+    public AudioSource soundSource;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +47,7 @@ public class Health : MonoBehaviour
 
     public void AddScore()
     {
+        soundSource.Play();
         health -= 1;
     }
 }
