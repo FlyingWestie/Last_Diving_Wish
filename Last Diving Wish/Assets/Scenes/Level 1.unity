@@ -523,7 +523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &181111175
 Transform:
   m_ObjectHideFlags: 0
@@ -6182,13 +6182,13 @@ MonoBehaviour:
   - {fileID: 6195405509944452706, guid: a5c0ca755eb33654798ac42835148c02, type: 3}
   - {fileID: 6304757610933632221, guid: ffba7252dc68ceb4db35656043a684b3, type: 3}
   - {fileID: 8509694086913540965, guid: 2b5f9640cab72b740b8d4b483a5ffedf, type: 3}
-  - {fileID: 1372558831464238, guid: a364d4630d1de5a47b1254fb6f322782, type: 3}
-  - {fileID: 104200127859442227, guid: 44239a113806dd4498210e88bf4f100e, type: 3}
-  - {fileID: 5210404630466328735, guid: 89beb60e454b7214b9332132c15051d1, type: 3}
-  - {fileID: 5224481942418780032, guid: 6f8338ac452484540826fa78748e1b8b, type: 3}
-  - {fileID: 1186012274502614236, guid: 6aa004edf0c352d40a2df2b4406fa182, type: 3}
-  - {fileID: 1063789972268754023, guid: cbdeaaf67556b7d4b8b88a53b272aeb8, type: 3}
-  - {fileID: 6104760496588917445, guid: 75cdc9ff988d1314ea9d43c1c21b0cbd, type: 3}
+  - {fileID: 8509694086913540965, guid: 8a5718b45c953b749a5d1a79af4ee67c, type: 3}
+  - {fileID: 8509694086913540965, guid: 1f9749b80a31e984ca291a47c0c1b472, type: 3}
+  - {fileID: 8509694086913540965, guid: cb17fc962bafbc443a0d12d977f95fb2, type: 3}
+  - {fileID: 6304757610933632221, guid: add41509224899e4c8a859ff1837e36d, type: 3}
+  - {fileID: 6304757610933632221, guid: b500aaeef194ac94dbba3d11f07fafd8, type: 3}
+  - {fileID: 6304757610933632221, guid: 4830718c9bfcc36489156d6f0d6f987d, type: 3}
+  - {fileID: 8509694086913540965, guid: 799c7574b970b9e4bb75a0daf5f1070f, type: 3}
   spawnValues: {x: 1.1, y: 0.143, z: 6}
   luggageCount: 40
   spawnWait: 1.2

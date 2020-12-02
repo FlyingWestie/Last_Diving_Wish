@@ -39,7 +39,7 @@ public class Health : MonoBehaviour
         {
 
             AddScore();
-            Destroy(GameObject.FindWithTag("debris"));
+            // Destroy(GameObject.FindWithTag("debris"));
 
         }
 
@@ -49,5 +49,6 @@ public class Health : MonoBehaviour
     {
         soundSource.Play();
         health -= 1;
+        Destroy(GameObject.FindWithTag("debris"));
     }
 }
