@@ -8,6 +8,7 @@ TagManager:
   - enemy
   - button
   - debris
+  - powerup
   layers:
   - Default
   - TransparentFX

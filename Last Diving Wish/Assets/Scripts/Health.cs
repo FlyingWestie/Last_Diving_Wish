@@ -37,12 +37,17 @@ public class Health : MonoBehaviour
 
         if (collision.gameObject.tag.Equals("debris"))
         {
-
             AddScore();
-            // Destroy(GameObject.FindWithTag("debris"));
-
         }
 
+        else if (collision.gameObject.tag.Equals("powerup"))
+        {
+            PowerUp();
+            if (health == 2)
+                heart2.SetActive(true);
+            if (health == 3)
+                heart3.SetActive(true);
+        }
 
     }
 
@@ -52,4 +57,11 @@ public class Health : MonoBehaviour
         health -= 1;
         Destroy(GameObject.FindWithTag("debris"));
     }
+
+    public void PowerUp()
+    {
+        health += 1;
+        Destroy(GameObject.FindWithTag("powerup"));
+    }
+
 }
