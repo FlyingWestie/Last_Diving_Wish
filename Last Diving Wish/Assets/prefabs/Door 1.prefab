@@ -97,8 +97,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 8.183051, y: 1, z: 1}
-  m_Center: {x: -0.05372539, y: 0, z: 0}
+  m_Size: {x: 8.183051, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1225571147339036298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,6 +112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+  luggage_catch: {fileID: 0}
+  soundSource: {fileID: 0}
 --- !u!54 &538867407100048331
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -143,3 +145,5 @@ MonoBehaviour:
   heart1: {fileID: 0}
   heart2: {fileID: 0}
   heart3: {fileID: 0}
+  lose_health: {fileID: 0}
+  soundSource: {fileID: 0}
