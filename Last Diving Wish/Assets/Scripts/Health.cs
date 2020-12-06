@@ -12,6 +12,8 @@ public class Health : MonoBehaviour
     public GameObject heart3;
     public AudioClip lose_health;
     public AudioSource soundSource;
+    public AudioSource goodSource;
+    public AudioClip gain_health;
 
     // Start is called before the first frame update
     void Start()
@@ -60,6 +62,7 @@ public class Health : MonoBehaviour
 
     public void PowerUp()
     {
+        goodSource.Play();
         health += 1;
         Destroy(GameObject.FindWithTag("powerup"));
     }
