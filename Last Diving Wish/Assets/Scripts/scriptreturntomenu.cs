@@ -11,6 +11,6 @@ public class scriptreturntomenu : MonoBehaviour
     }
     public void MainMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Menu_Update");
     }
 }
