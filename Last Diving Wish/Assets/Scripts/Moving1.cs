@@ -35,7 +35,7 @@ public class Moving1 : MonoBehaviour
             Destroy(GameObject.FindWithTag("Luggege"));
             if (scoring.score1 >= 15)
             {
-                SceneManager.LoadScene("Win1");
+                SceneManager.LoadScene("Win2");
             }
         }
 
