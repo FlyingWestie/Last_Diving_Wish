@@ -49,6 +49,10 @@ public class Health : MonoBehaviour
                 heart2.SetActive(true);
             if (health == 3)
                 heart3.SetActive(true);
+            if (health > 3)
+            {
+                health = 3;
+            }
         }
 
     }
