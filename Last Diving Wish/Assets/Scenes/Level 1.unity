@@ -5210,6 +5210,7 @@ MonoBehaviour:
   - {fileID: 6304757610933632221, guid: b500aaeef194ac94dbba3d11f07fafd8, type: 3}
   - {fileID: 6304757610933632221, guid: 4830718c9bfcc36489156d6f0d6f987d, type: 3}
   - {fileID: 8509694086913540965, guid: 799c7574b970b9e4bb75a0daf5f1070f, type: 3}
+  - {fileID: 8509694086913540965, guid: 458451d189ee045489bd45c46b496c9a, type: 3}
   spawnValues: {x: 1.1, y: 0.143, z: 6}
   luggageCount: 40
   spawnWait: 1.2
