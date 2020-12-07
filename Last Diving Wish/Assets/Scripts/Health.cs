@@ -33,26 +33,29 @@ public class Health : MonoBehaviour
             heart1.SetActive(false);
             SceneManager.LoadScene("Lose");
         }
+        if (health > 3)
+        {
+            health = 3;
+        }
     }
     void OnTriggerEnter(Collider other)
     {
 
         if (other.gameObject.tag.Equals("debris"))
         {
+            Destroy(GameObject.FindWithTag("debris"));
             AddScore();
         }
 
         else if (other.gameObject.tag.Equals("powerup"))
         {
+            Destroy(GameObject.FindWithTag("powerup"));
             PowerUp();
-            if (health == 2)
-                heart2.SetActive(true);
-            if (health == 3)
-                heart3.SetActive(true);
-            if (health > 3)
-            {
-                health = 3;
-            }
+        }
+
+        else
+        {
+            Destroy(GameObject.FindWithTag("Luggege"));
         }
 
     }
@@ -61,14 +64,16 @@ public class Health : MonoBehaviour
     {
         soundSource.Play();
         health -= 1;
-        Destroy(GameObject.FindWithTag("debris"));
     }
 
     public void PowerUp()
     {
         goodSource.Play();
         health += 1;
-        Destroy(GameObject.FindWithTag("powerup"));
+        if (health == 2)
+            heart2.SetActive(true);
+        if (health == 3)
+            heart3.SetActive(true);
     }
 
 }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 354125237372802405}
   - component: {fileID: 1757012551714969176}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: luggage_yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6304757610933632216}
   - component: {fileID: 6304757610933632223}
   - component: {fileID: 6304757610933632218}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Luggage_Green
   m_TagString: Luggege
   m_Icon: {fileID: 0}

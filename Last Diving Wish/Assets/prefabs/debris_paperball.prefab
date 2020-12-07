@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8509694086913540966}
   - component: {fileID: 8509694086913540967}
   - component: {fileID: 8509694086913540964}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: debris_paperball
   m_TagString: debris
   m_Icon: {fileID: 0}

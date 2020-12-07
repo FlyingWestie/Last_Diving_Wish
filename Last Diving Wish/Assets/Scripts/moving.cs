@@ -32,7 +32,6 @@ public class moving : MonoBehaviour
         {
             soundSource.Play();
             scoring.score1 += 1;
-            Destroy(GameObject.FindWithTag("Luggege"));
             if (scoring.score1 >= 10)
             {
                 SceneManager.LoadScene("Win");
