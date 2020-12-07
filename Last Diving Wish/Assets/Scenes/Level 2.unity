@@ -4244,7 +4244,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1591858961}
         m_TargetAssemblyTypeName: scriptreturntomenu, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4350,7 +4350,7 @@ MonoBehaviour:
   - {fileID: 6304757610933632221, guid: add41509224899e4c8a859ff1837e36d, type: 3}
   - {fileID: 8509694086913540965, guid: 458451d189ee045489bd45c46b496c9a, type: 3}
   spawnValues: {x: 1.1, y: 0.143, z: 6}
-  luggageCount: 50
+  luggageCount: 60
   spawnWait: 1.2
   startWait: 1
 --- !u!82 &1597942091
