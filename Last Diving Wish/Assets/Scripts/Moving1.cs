@@ -47,8 +47,10 @@ public class Moving1 : MonoBehaviour
             else
                 velX = 0;
         }
-
-        //velX = Input.GetAxisRaw("Horizontal");
+        else
+        {
+            velX = Input.GetAxisRaw("Horizontal");
+        }
         velY = rigBody.velocity.y;
         rigBody.velocity = new Vector2(velX * moveSpeed, velY);
     }

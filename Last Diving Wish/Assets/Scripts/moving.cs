@@ -50,8 +50,11 @@ public class moving : MonoBehaviour
                 velX = 0;
         }
 
-            //velX = Input.GetAxisRaw("Horizontal");
-            velY = rigBody.velocity.y;
+        else
+        {
+            velX = Input.GetAxisRaw("Horizontal");
+        }
+        velY = rigBody.velocity.y;
             rigBody.velocity = new Vector2(velX * moveSpeed, velY);
         }
         private void OnTriggerEnter(Collider other)
