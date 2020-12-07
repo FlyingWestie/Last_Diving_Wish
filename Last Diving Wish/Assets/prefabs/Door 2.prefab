@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6302959298113021195}
   - component: {fileID: 4633244145496192950}
   - component: {fileID: 2542784545197622176}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Door 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,3 +147,5 @@ MonoBehaviour:
   heart3: {fileID: 0}
   lose_health: {fileID: 0}
   soundSource: {fileID: 0}
+  goodSource: {fileID: 0}
+  gain_health: {fileID: 0}
