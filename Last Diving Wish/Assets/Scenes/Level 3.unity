@@ -2217,7 +2217,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415133655}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -414, y: -1199, z: 0}
+  m_LocalPosition: {x: -399, y: -1067, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1118388825}
@@ -4844,7 +4844,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -257.88, y: 484.99988}
+  m_AnchoredPosition: {x: -242.88, y: 616.9999}
   m_SizeDelta: {x: 284.24792, y: 87.33012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &967408043
@@ -6931,7 +6931,7 @@ RectTransform:
   m_GameObject: {fileID: 1444894251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.7544594, y: 3.5453856, z: 7.8492}
+  m_LocalScale: {x: 3.7544594, y: 4.5, z: 7.8492}
   m_Children: []
   m_Father: {fileID: 956758055}
   m_RootOrder: 0
@@ -7808,7 +7808,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 337.459, y: 500.29205}
+  m_AnchoredPosition: {x: 352.459, y: 632.29205}
   m_SizeDelta: {x: 38.633568, y: 37.552277}
   m_Pivot: {x: 0.49999952, y: 0.50000125}
 --- !u!114 &1533300134
@@ -7854,17 +7854,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 956758051}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1471837871}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1533300135
 MonoBehaviour:
@@ -9399,7 +9399,7 @@ RectTransform:
   m_GameObject: {fileID: 2023818216}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.779309, y: 3.9657419, z: 3.9657419}
+  m_LocalScale: {x: 3.779309, y: 5, z: 3.9657419}
   m_Children: []
   m_Father: {fileID: 1471837877}
   m_RootOrder: 0

@@ -1322,7 +1322,7 @@ RectTransform:
   m_GameObject: {fileID: 645593108}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.778401, y: 3.964789, z: 3.964789}
+  m_LocalScale: {x: 3.778401, y: 5, z: 3.964789}
   m_Children: []
   m_Father: {fileID: 284645}
   m_RootOrder: 0
@@ -1788,7 +1788,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 337.459, y: 505.29205}
+  m_AnchoredPosition: {x: 349.45898, y: 631.2921}
   m_SizeDelta: {x: 38.633568, y: 37.552277}
   m_Pivot: {x: 0.49999952, y: 0.50000125}
 --- !u!114 &829588126
@@ -1835,16 +1835,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 284639}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &829588127
 MonoBehaviour:
@@ -2878,7 +2878,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117726324}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -414, y: -1194, z: 0}
+  m_LocalPosition: {x: -402, y: -1068, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 830869030}
@@ -4580,7 +4580,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -257.88, y: 489.99988}
+  m_AnchoredPosition: {x: -245.88002, y: 615.99994}
   m_SizeDelta: {x: 284.24792, y: 87.33012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1609404530
@@ -5391,7 +5391,7 @@ RectTransform:
   m_GameObject: {fileID: 1875133901}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.7957406, y: 3.584368, z: 7.935504}
+  m_LocalScale: {x: 3.7957406, y: 4.5, z: 7.935504}
   m_Children: []
   m_Father: {fileID: 961365007}
   m_RootOrder: 0
