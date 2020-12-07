@@ -15,9 +15,9 @@ public class MenuMainScript : MonoBehaviour
 
     public void PlayGame()
     {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         soundSource.Play();
-        StartCoroutine(WaitAndLoadScene(soundSource.clip.length));
+        //StartCoroutine(WaitAndLoadScene(soundSource.clip.length));
     }
         private IEnumerator WaitAndLoadScene(float length)
         {
