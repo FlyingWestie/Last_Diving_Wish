@@ -34,15 +34,15 @@ public class Health : MonoBehaviour
             SceneManager.LoadScene("Lose");
         }
     }
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
 
-        if (collision.gameObject.tag.Equals("debris"))
+        if (other.gameObject.tag.Equals("debris"))
         {
             AddScore();
         }
 
-        else if (collision.gameObject.tag.Equals("powerup"))
+        else if (other.gameObject.tag.Equals("powerup"))
         {
             PowerUp();
             if (health == 2)

@@ -26,9 +26,9 @@ public class Moving1 : MonoBehaviour
         velY = rigBody.velocity.y;
         rigBody.velocity = new Vector2(velX * moveSpeed, velY);
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag.Equals("Luggege"))
+        if (other.gameObject.tag.Equals("Luggege"))
         {
             soundSource.Play();
             scoring.score1 += 1;
