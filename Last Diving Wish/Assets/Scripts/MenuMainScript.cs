@@ -15,9 +15,9 @@ public class MenuMainScript : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         soundSource.Play();
-        //StartCoroutine(WaitAndLoadScene(soundSource.clip.length));
+        StartCoroutine(WaitAndLoadScene(soundSource.clip.length));
     }
         private IEnumerator WaitAndLoadScene(float length)
         {
@@ -27,7 +27,7 @@ public class MenuMainScript : MonoBehaviour
             AsyncOperation sceneLoading = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
             sceneLoading.allowSceneActivation = false;
      
-            yield return new WaitForSeconds(duration);
+            yield return new WaitForSeconds(1);
 
             while (sceneLoading.progress < 0.9f) yield return null;
 
